@@ -1,54 +1,89 @@
-
 # Enterprise Sales & Customer Analytics – Power BI
 
-## Executive Summary
-This project delivers a **production-grade, enterprise analytics solution** built using **Power BI**, following **financial-services-level data architecture and BI governance practices**.
+## Overview
+This project delivers an **enterprise-grade analytical reporting solution** built in **Power BI**, designed using **financial-services-level data architecture and semantic modeling standards**.
 
-The solution enables executive leadership and analysts to monitor **revenue, profit, orders, returns, customer value, and geographic performance**, while supporting **advanced analytics capabilities** such as:
-- AI-driven insights (Key Influencers, Decomposition Tree, Q&A)
-- What-If price simulation
-- Target vs Actual performance tracking
-- Centralized semantic layer with governed DAX measures
-
-This project is intentionally designed to reflect how **large financial institutions and global enterprises** implement analytical reporting platforms.
+The solution provides executives and analysts with a **single source of truth** for monitoring **revenue, profit, orders, returns, customer value, and geographic performance**, while enabling **advanced analytical exploration** through AI visuals and What-If analysis.
 
 ---
 
 ## Business Objectives
-The solution answers the following strategic questions:
-
-- How are **Revenue, Profit, Orders, and Returns** trending over time?
-- Which **products, categories, and regions** drive the most value?
-- Who are the **highest-value customers**, and how does behavior differ by segment?
-- How do **returns and margins** vary across products?
-- What factors **influence pricing and customer behavior**?
-- How would **price changes impact revenue and profitability**?
+- Track **Revenue, Profit, Orders, and Return Rate** across time
+- Identify **top products, categories, and regions**
+- Analyze **customer value and behavior**
+- Evaluate **pricing impact** using What-If simulations
+- Support **self-service analytics** with governed metrics
 
 ---
 
-## Architecture Overview
+## Architecture & Data Model
+- **Star Schema** with clear fact/dimension separation
+- **Fact Tables**: Sales, Returns  
+- **Dimensions**: Calendar, Customer, Product, Category/Subcategory, Territory
+- **Supporting Tables**:
+  - Central **Measure Table** (semantic layer)
+  - Metric selection tables
+  - Price Adjustment (%) What-If parameter
 
-### Architectural Pattern
-- **Star Schema (Dimensional Modeling)**
-- Centralized **semantic layer**
-- Measure-driven analytics
-- Clear separation of:
-  - Data
-  - Business logic
-  - Presentation
-
-This architecture ensures **scalability, correctness, and performance**.
+**Design principles**
+- One-directional relationships
+- Calendar marked as Date table
+- Measures isolated from visuals
+- No duplicated business logic
 
 ---
 
-## Data Model
+## Semantic Layer (DAX Measures)
+All KPIs are centralized in a governed **Measure Table**, ensuring consistency and scalability.
 
-### Fact Tables
-- **Sales Data**
-  - Grain: One row per order line
-  - Metrics: Quantity, Revenue, Profit
-- **Returns Data**
-  - Grain: One row per returned product
-  - Metrics: Returned Quantity
+**Core KPIs**
+- Total Orders
+- Total Revenue
+- Total Profit
+- Total Returns
 
-### Dimension Tables
+**Advanced Analytics**
+- YTD and MoM metrics
+- Rolling revenue and profit
+- Target vs Actual and variance
+- Return rates and contribution %
+- Customer value and order behavior
+- Adjusted Revenue/Profit via What-If pricing
+
+This structure mirrors **enterprise BI semantic layers** used in large financial institutions.
+
+---
+
+## Reporting Capabilities
+- **Executive Dashboard** – KPI snapshot, trends, targets
+- **Geospatial Analysis** – Global performance by region
+- **Product Analytics** – Category/product drilldowns and pricing simulation
+- **Customer Analytics** – Segmentation and revenue concentration
+- **AI Visuals** – Key Influencers, Decomposition Tree, Natural Language Q&A
+- **UX Enhancements** – Bookmarks and dynamic navigation
+
+---
+
+## Governance & Performance
+- Sample/anonymized data only
+- No credentials stored in PBIX
+- Optimized DAX using VAR patterns
+- Star schema for performance and clarity
+- Reusable, extensible model design
+
+---
+
+## Technology Stack
+Power BI • DAX • Power Query (M) • Dimensional Modeling • AI Visuals • GitHub
+
+---
+
+## Portfolio Context
+This project demonstrates **enterprise BI architecture**, **semantic modeling discipline**, and **executive-ready analytics**, reflecting the standards used in **banking, capital markets, and large-scale enterprise analytics teams**.
+
+---
+
+## Author
+**Harika Murari**  
+Data Engineer | BI Engineer  
+Power BI • DAX • SQL • Analytics Engineering
