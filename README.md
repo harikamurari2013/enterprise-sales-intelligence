@@ -7,7 +7,7 @@ The solution provides executives and analysts with a **single source of truth** 
 
 ---
 ## Data model
-![Data model](images/Data Model.png)
+![Data model](images/Datamodel.png)
 
 ## Dashboard
 ![Dashboard](images/Dashboard-Overview.png)
