@@ -84,6 +84,6 @@ This project demonstrates **enterprise BI architecture**, **semantic modeling di
 ---
 
 ## Author
-**Harika Murari**  
+**Harika Muddi Murari**  
 Data Engineer | BI Engineer  
 Power BI • DAX • SQL • Analytics Engineering
