@@ -6,6 +6,12 @@ This project delivers an **enterprise-grade analytical reporting solution** buil
 The solution provides executives and analysts with a **single source of truth** for monitoring **revenue, profit, orders, returns, customer value, and geographic performance**, while enabling **advanced analytical exploration** through AI visuals and What-If analysis.
 
 ---
+## Data model
+![Model](images/Data Model.png)
+
+## Dashboard
+![Dashboard](images/Dashboard-Overview.png)
+
 
 ## Business Objectives
 - Track **Revenue, Profit, Orders, and Return Rate** across time
