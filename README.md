@@ -9,6 +9,9 @@ The solution provides executives and analysts with a **single source of truth** 
 ## Dashboard
 ![Dashboard](images/Dashboard-Overview.png)
 
+##Data Model
+![Data Model](images/DataModel.png)
+
 
 ## Business Objectives
 - Track **Revenue, Profit, Orders, and Return Rate** across time
