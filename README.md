@@ -10,7 +10,7 @@ The solution provides executives and analysts with a **single source of truth** 
 ![Dashboard](images/Dashboard-Overview.png)
 
 ##Data Model
-![Data Model](images/DataModel.png)
+![Data Model](images/Datamodel.png)
 
 
 ## Business Objectives
